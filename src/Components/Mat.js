@@ -70,7 +70,13 @@ const Mat = () => {
             {" "}
             This is my tab{" "}
           </Typography>
-          {/*<Button  style={{marginLeft: "50px"}} variant="contained"  onClick={startMenu} >Icecream Cravings? </Button>*/}
+          <Button
+            style={{ marginLeft: "50px" }}
+            variant="contained"
+            onClick={startMenu}
+          >
+            Icecream Cravings?{" "}
+          </Button>
 
           <IconButton
             style={{ marginLeft: "600px" }}

@@ -1,24 +1,17 @@
 import React from "react";
-//import Button from '@material-ui/core/Button';
-//import Demo from './Components/Demo';
 import Tweet from "./Components/Tweet";
-import Header from "./Header";
-import Nav from "./Nav";
-import About from "./About";
-import Shop from "./Shop";
-import Footer from "./Footer";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import Shopify from "./Components/Shopify";
+import Buy from "./Components/Buy";
 
 function App() {
   return (
     <Router>
-      <div>
-        <Nav />
-        <Route path="/" component={About} />
-        <Route path="/" component={Shop} />
-        <Tweet name="Hey Abhishek!" message="Welcome You" />
-      </div>
+      <Route path="/" exact component={Shopify} />
+      <Route path="/Buy" component={Buy} />
+      <Route path="/tweet/facebook" exact component={Tweet} />
+      {/* <Tweet name="Hey Abhishek!" message="Welcome You" /> */}
     </Router>
   );
 }
