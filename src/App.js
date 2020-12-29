@@ -15,8 +15,8 @@ function App() {
     <Router>
       <div>
         <Nav />
-        <Route path="/about" component={About} />
-        <Route path="/shop" component={Shop} />
+        <Route path="/" component={About} />
+        <Route path="/" component={Shop} />
         <Tweet name="Hey Abhishek!" message="Welcome You" />
       </div>
     </Router>
